@@ -1,0 +1,22 @@
+.radicalSection{
+    background-color: #FF7F00;
+    padding-bottom: 1rem;
+}
+
+.radicalTitle{
+    margin: 0rem 0 2rem 1rem;
+    
+}
+
+.radicalBtn{
+    width: 5rem;
+    height: 2.5rem;
+    background-color: antiquewhite;
+    border-radius: 0.25rem;
+    margin: 0 auto 1rem auto;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    font-size: 0.7rem;
+    font-weight: 600;
+}

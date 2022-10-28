@@ -1,0 +1,28 @@
+.sectionLeer{
+    background-color: #0000FF;
+    display: flex;
+    flex-direction: column;
+}
+
+.leerTitle{
+    margin: 0 0 0 1rem;
+}
+
+.flipBtn{
+    width: 5rem;
+    height: 2.5rem;
+    background-color: antiquewhite;
+    border-radius: 0.25rem;
+    margin: 0 auto 1rem auto;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.coinImg{
+    margin: 1rem auto;
+    width: 10rem;
+    height: 10rem;
+}

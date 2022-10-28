@@ -1,0 +1,30 @@
+#sectionKm {
+    background-color: #9400D3;
+    padding: 1rem;
+}
+
+#show{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.danger{
+    border: 1px white solid;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+input{
+    background-color: aqua;
+    border-radius: 0.2rem;
+    border: 1px solid black;
+    margin: 0.5rem ;
+}
+
+label{
+    margin: 0.5rem 0 0.5rem 1rem;
+}
