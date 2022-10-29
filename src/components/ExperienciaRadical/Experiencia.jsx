@@ -1,12 +1,14 @@
 //Pagina que va a ver el usuario y va a cargar el mapa
 import React, { useEffect, useState } from 'react'
+import s from './Experiencia.module.css';
+import video from './VideoWorld.mp4';
 
 export default function Experiencia() {
   const lat = Math.random() * (64.9 - -54.40) + -54.40 //de Alaska a Usuhaia
   const [map, setMap] = useState(false)
-  const [lon, setLon] = useState(-40)
+  //const [lon, setLon] = useState(-40)
   
-  //const lon = Math.random() * (-150.00 - -38.00) + -38.00; //de Alaska a Brasil
+  const lon = Math.random() * (-150.00 - -38.00) + -38.00; //de Alaska a Brasil
  
   
   // const coordenadas = () => {
@@ -27,14 +29,14 @@ export default function Experiencia() {
 
   //La 1ra vez lon toma el valor inicial y despues lon da false
   //y si hago setLon>= -72 siempre toma el valor inicial
-  useEffect(() => {
-    if(lat >= -54.4 && lat <= -34.9){
-      setLon(lon >= -72 && lon <= -34)
-    } else {
-      setLon(lon >= -123 && lon <= -70)
-    }
-    console.log('lat es ' + lat,'lon es ' + lon)
-  },[lat, lon])
+  // useEffect(() => {
+  //   if(lat >= -54.4 && lat <= -34.9){
+  //     setLon(lon >= -72 && lon <= -34)
+  //   } else {
+  //     setLon(lon >= -123 && lon <= -70)
+  //   }
+  //   console.log('lat es ' + lat,'lon es ' + lon)
+  // },[lat, lon])
 
 
 /*  const createLon = (lat) =>{
@@ -47,14 +49,16 @@ export default function Experiencia() {
   }
 
   return (
-    <div>
-        <h1>Bienvenido a una experiencia radical</h1>
-        <p>Cuando hagas click en ese botón encontrarás la coordenada exacta de tu próximo destino.</p>
-        <button onClick={handleMap}>Buscá tu próximo destino</button>
+    <div className={s.experienceSection}>
+        <h1 className={s.destinyTitle}>Bienvenido a una experiencia radical</h1>
+        {/*<p>Cuando hagas click en ese botón encontrarás la coordenada exacta de tu próximo destino.</p>*/}
+        <button className={s.destinyBtn} onClick={handleMap}>Buscá tu próximo destino</button>
         <div>
-          {map === true ? <iframe title='Google Maps' src={`https://maps.google.com/maps?q=${lat},${lon}&hl=es;&output=embed`} 
+          {map === true ? <iframe className={s.frame} title='Google Maps' src={`https://maps.google.com/maps?q=${lat},${lon}&hl=es;&output=embed`} 
             id='iframeId' height="400px" width="500px"/> 
-            : <p>Te animas?</p>}
+            : <video className={s.videoWorld} autoPlay loop muted>
+              <source src={video} type="video/mp4"/>
+            </video>}
         </div>
     </div>
   )

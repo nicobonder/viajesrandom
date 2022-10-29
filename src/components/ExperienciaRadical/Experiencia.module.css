@@ -1,0 +1,40 @@
+.experienceSection{
+    background-color: black;
+    color: white;
+    padding-top: 0.5rem;
+}
+
+.destinyTitle{
+    margin: 0 0 0.5rem 0;
+}
+
+.destinyBtn{
+    height: 2rem;
+    width: 12rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid white;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    color: white;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+
+.destinyBtn:hover{
+    color: rgb(200, 197, 197);
+    padding: 0.1rem;
+    border: 2px solid rgb(200, 197, 197);
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.videoWorld{
+    height: 500px;
+    width: 500px;
+}
+
+.frame{
+    margin-top: 1rem;
+    border: none;
+}
