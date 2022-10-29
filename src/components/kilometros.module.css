@@ -1,6 +1,7 @@
 #sectionKm {
-    background-color: #9400D3;
+    background-color: #4B0082;
     padding: 1rem;
+    color: white;
 }
 
 #show{
@@ -19,12 +20,37 @@
 }
 
 input{
-    background-color: aqua;
+    background-color: transparent;
     border-radius: 0.2rem;
-    border: 1px solid black;
+    border: 1px solid white;
     margin: 0.5rem ;
+    color: white;
+    padding-left: 0.25rem;
+}
+::placeholder { 
+    color: rgb(200, 197, 197); 
+    font-size: 0.9em;
+    padding-left: 0.25rem;
 }
 
 label{
     margin: 0.5rem 0 0.5rem 1rem;
+}
+
+.kmButn{
+    height: 2rem;
+    width: 5rem;
+    background-color: transparent;
+    color: white;
+    border: white 1px solid;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.kmButn:hover{
+    color: rgb(200, 197, 197);
+    padding: 0.1rem;
+    border: 2px solid rgb(200, 197, 197);
+    font-weight: 600;
 }

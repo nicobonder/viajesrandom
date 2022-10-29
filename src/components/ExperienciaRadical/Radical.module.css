@@ -10,13 +10,22 @@
 
 .radicalBtn{
     width: 5rem;
-    height: 2.5rem;
-    background-color: antiquewhite;
+    height: 2rem;
+    background-color: transparent;
+    border: 1px solid black;
     border-radius: 0.25rem;
     margin: 0 auto 1rem auto;
     cursor: pointer;
     outline: none;
     color: black;
     font-size: 0.7rem;
-    font-weight: 600;
+    font-weight: 500;
+    transition: 0.2s all;
+}
+
+.radicalBtn:hover{
+    color: rgb(200, 197, 197);
+    padding: 0.1rem;
+    border: 2px solid rgb(200, 197, 197);
+    font-size: 0.8rem;
 }

@@ -1,5 +1,5 @@
 .sectionLeer{
-    background-color: #0000FF;
+    background-color: #00FF00;
     display: flex;
     flex-direction: column;
 }
@@ -9,20 +9,34 @@
 }
 
 .flipBtn{
+    height: 2rem;
     width: 5rem;
-    height: 2.5rem;
-    background-color: antiquewhite;
-    border-radius: 0.25rem;
+    background-color: transparent;
+    color: black;
+    border: black 1px solid;
+    border-radius: 0.2rem;
     margin: 0 auto 1rem auto;
     cursor: pointer;
     outline: none;
-    color: black;
-    font-size: 0.7rem;
+    font-weight: 500;
+    transition: 0.2s all;
+}
+
+.flipBtn:hover{
+    color: rgb(54, 51, 51);
+    padding: 0.1rem;
+    border: 2px solid rgb(54, 51, 51);
     font-weight: 600;
+    font-size: 0.8rem;
 }
 
 .coinImg{
     margin: 1rem auto;
     width: 10rem;
     height: 10rem;
+}
+
+.sms{
+    font-size: 1.3rem;
+    font-weight: 600;
 }

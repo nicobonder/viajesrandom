@@ -68,7 +68,7 @@ export default function Kilometros() {
                     id="minId"
                 />
                 {error.min && (
-                    <p className="danger">{error.min}</p>
+                    <p className={s.danger}>{error.min}</p>
                 )}
                 <label htmlFor="max">Kilómetros máximos</label>
                 <input 
@@ -82,10 +82,10 @@ export default function Kilometros() {
                     id="maxId" 
                 />
                 {error.max && (
-                    <p className="danger">{error.max}</p>
+                    <p className={s.danger}>{error.max}</p>
                 )}
             </div>
-            <button disabled={ !input.min || !input.max || !(input.min < input.max)  /*</form>* Object.keys(error).length !== 0 ESTO NO FUNCIONA BIEN*/
+            <button className={s.kmButn} disabled={ !input.min || !input.max || !(input.min < input.max)  /*</form>* Object.keys(error).length !== 0 ESTO NO FUNCIONA BIEN*/
         } onClick={() => setRand(Math.floor(Math.random() * (input.max - input.min) + input.min))}>Calcular</button> {/*calcular un numero random*/}
             <h3>Tenés que viajar :</h3>
              {<p id={s.show}>{rand} kilómetros</p> } {/*Muestro la cantidad de km*/}

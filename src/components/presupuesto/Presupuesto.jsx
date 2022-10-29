@@ -54,8 +54,9 @@ export default function Presupuesto() {
     <div className={s.sectionPresupuesto}>
       <h2 className={s.presupuestoTitle}>Elegí tu presupuesto máximo</h2>
       <p>Tu presupesto total va a ser la multiplicación del mínimo que pongas y el número que te toque en la carta que elijas.</p>
-      <label htmlFor="presupuestoMin">Tu presupuesto mínimo: </label>
+      <label className={s.text} htmlFor="presupuestoMin">Tu presupuesto mínimo: </label>
       <input
+        className={s.inputPres}
         type='number'
         name='presupuestoMin'
         value={input.presupuestoMin}
