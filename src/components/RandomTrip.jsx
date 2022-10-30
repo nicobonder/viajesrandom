@@ -3,9 +3,9 @@ import Comida from './Comida'
 import Kilometros from './Kilometros'
 import LeerFuncional from './leer/LeerFuncional'
 import Presupuesto from './presupuesto/Presupuesto'
-import Radical from '../components/ExperienciaRadical/Radical'
+import Radical from './ExperienciaRadical/Radical'
 
-export default function Home() {
+export default function RandomTrip() {
   return (
     <div>
         <Kilometros />
