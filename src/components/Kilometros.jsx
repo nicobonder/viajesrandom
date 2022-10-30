@@ -52,7 +52,7 @@ export default function Kilometros() {
 
   return (
     <div id={s.sectionKm}>
-        <h2>Kilometros aleatorios</h2>
+        <h2>Kilómetros aleatorios</h2>
         <p>En esta sección vamos a establecer cuántos kilómetros deberías llegar a tu próximo destino.</p>
         <form onSubmit={handleSubmit}>
             <p>Primero decinos cuántos kilómetros querés viajar como mínimo y como máximo. Después hace click en Calcular</p> {/*Esto podria estar en un promt o algo q aparezca cdo el usuario toca un ?*/}
@@ -86,10 +86,11 @@ export default function Kilometros() {
                 )}
             </div>
             <button className={s.kmButn} disabled={ !input.min || !input.max || !(input.min < input.max)  /*</form>* Object.keys(error).length !== 0 ESTO NO FUNCIONA BIEN*/
-        } onClick={() => setRand(Math.floor(Math.random() * (input.max - input.min) + input.min))}>Calcular</button> {/*calcular un numero random*/}
-            <h3>Tenés que viajar :</h3>
-             {<p id={s.show}>{rand} kilómetros</p> } {/*Muestro la cantidad de km*/}
-
+              } onClick={() => setRand(Math.floor(Math.random() * (input.max - input.min) + input.min))}>Calcular</button> {/*calcular un numero random*/}
+            <div className={s.resultContainer}>
+              <h3 className={s.resultTitle}>Tenés que viajar :</h3>
+              {<p id={s.show}>{rand} kilómetros</p> } {/*Muestro la cantidad de km*/}
+             </div>
         </form>
     </div>
   )

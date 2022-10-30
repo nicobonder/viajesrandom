@@ -1,7 +1,8 @@
 #sectionComida {
-    background-color: #0000FF;
-    padding: 0.1rem 0 5rem 0;
+    background-color: rgb(250, 250, 250);
+    padding: 1rem 0 4rem 0;
     position: relative;
+    color: #FE5900;
 }
 
 .foodTitle{
@@ -10,54 +11,67 @@
 
 li:first-child .opcion {
     background-color: aqua;
+    color: black;
 }
 
 li:nth-child(2) .opcion {
     background-color: yellow;
+    color: black;
 }
 
 li:nth-child(3) .opcion {
     background-color: rgb(72, 75, 230);
+    color: black;
 }
 
 li:nth-child(4) .opcion {
     background-color: rgb(10, 106, 65);
+    color: black;
 }
 
 li:nth-child(5) .opcion {
     background-color: rgb(238, 106, 167);
+    color: black;
 }
 
 li:nth-child(6) .opcion {
     background-color: yellow;
+    color: black;
 }
 
 li:nth-child(7) .opcion {
     background-color: aqua;
+    color: black;
 }
 
 li:nth-child(8) .opcion {
     background-color: rgb(130, 236, 91);
+    color: black;
 }
 
 li:nth-child(9) .opcion {
     background-color: red;
+    color: black;
 }
 
 li:nth-child(10) .opcion {
     background-color: rgb(72, 75, 230);
+    color: black;
 }
 
 li:nth-child(11) .opcion {
     background-color: rgb(238, 106, 167);
+    color: black;
 }
 
 li:nth-child(12) .opcion {
     background-color: rgb(10, 106, 65);
+    color: black;
 }
 
 li:first-child {
     transform: rotate(0deg) skewY(-60deg);
+    
 }
 
 li:nth-child(2) {
@@ -107,7 +121,7 @@ li:nth-child(12) {
 .ruleta{
     width: 19rem;
     height: 19rem;
-    border: 1px solid white;
+    border: 2px solid rgb(254,89,0);
     border-radius: 50%;
     position: relative;
     padding: 0;
@@ -118,13 +132,13 @@ li:nth-child(12) {
 
 /*animation: startrotate 3s cubic-bezier(.2,1.2,1,1); */
 .start-rotate{
-    animation: start-rotate 4s cubic-bezier(.2,1.2,1,1) infinite;
+    animation: start-rotate 6s cubic-bezier(0,0,0.21,0.99) infinite;
 }
 
 @keyframes start-rotate {
-    from {transform: rotate(0deg);
+    from {transform: rotate(360deg);
     }
-    to {transform: rotate(360deg);
+    to {transform: rotate(0deg);
     }
   }
 
@@ -161,8 +175,9 @@ li{
     height: 0;
     border-left: 0.7rem solid transparent;
     border-right: 0.7rem solid transparent;
-    border-top:2.35rem solid black;
+    border-top:2.35rem solid rgb(254,89,0);
     position: absolute;
+    margin-top: 0.8rem;
     left: 50%;
     top: 3.2rem;
     z-index: 10;
@@ -174,15 +189,15 @@ li{
     height: 2rem;
     width: 5rem;
     background-color: transparent;
-    color: white;
-    border: white 1px solid;
+    color: rgb(254,89,0);
+    border: rgb(254,89,0) 1px solid;
     border-radius: 0.2rem;
     margin: 1.2rem 0;
     cursor: pointer;
     outline: none;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 500;
-    transition: 0.2s all;
+    transition: 0.5s all ease-in-out;;
 }
 
 .spinBtn:hover{
@@ -190,4 +205,7 @@ li{
     padding: 0.1rem;
     border: 2px solid rgb(200, 197, 197);
     font-size: 0.8rem;
+    box-shadow: 6px 7px 6px -3px rgba(26,24,24,0.83);
+-webkit-box-shadow: 6px 7px 6px -3px rgba(26,24,24,0.83);
+-moz-box-shadow: 6px 7px 6px -3px rgba(26,24,24,0.83);
 }

@@ -1,6 +1,7 @@
 .radicalSection{
-    background-color: #FF7F00;
-    padding-bottom: 1rem;
+    background-color: #4B0082;
+    padding: 1rem;
+    color: white;
 }
 
 .radicalTitle{
@@ -9,23 +10,27 @@
 }
 
 .radicalBtn{
-    width: 5rem;
     height: 2rem;
+    width: 5rem;
     background-color: transparent;
-    border: 1px solid black;
+    color: white;
+    border: 1px solid white;
     border-radius: 0.25rem;
     margin: 0 auto 1rem auto;
     cursor: pointer;
     outline: none;
-    color: black;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 500;
-    transition: 0.2s all;
+    transition: 0.3s all ease-in;
 }
 
 .radicalBtn:hover{
     color: rgb(200, 197, 197);
     padding: 0.1rem;
     border: 2px solid rgb(200, 197, 197);
-    font-size: 0.8rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 6px 7px 6px -3.5px rgba(176,166,166,0.83);
+    -webkit-box-shadow: 6px 7px 6px -3.5px rgba(176,166,166,0.83);
+    -moz-box-shadow: 6px 7px 6px -3.5px rgba(176,166,166,0.83);
 }

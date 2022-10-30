@@ -15,7 +15,7 @@ export default class Comida extends Component {
       this.setState({
         name: "ruleta start-rotate stop-rotate",
       });
-    }, Math.floor(Math.random() *  (4000 - 1000) + 1000));
+    }, Math.floor(Math.random() *  (6000 - 2000) + 2000));
   };
 
 

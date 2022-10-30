@@ -1,16 +1,14 @@
 #sectionKm {
-    background-color: #4B0082;
+    background-color: rgb(250, 250, 250);
     padding: 1rem;
-    color: white;
-}
-
-#show{
-    font-size: 1.2rem;
-    font-weight: 600;
+    color: #4B0082;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .danger{
-    border: 1px white solid;
+    border: 1px #4B0082 solid;
 }
 
 .inputs{
@@ -22,9 +20,9 @@
 input{
     background-color: transparent;
     border-radius: 0.2rem;
-    border: 1px solid white;
+    border: 1px solid #4B0082;
     margin: 0.5rem ;
-    color: white;
+    color: #4B0082;
     padding-left: 0.25rem;
 }
 ::placeholder { 
@@ -41,11 +39,14 @@ label{
     height: 2rem;
     width: 5rem;
     background-color: transparent;
-    color: white;
-    border: white 1px solid;
+    color: #4B0082;
+    border: #4B0082 1px solid;
     border-radius: 0.2rem;
     cursor: pointer;
+    outline: none;
+    font-size: 0.8rem;
     font-weight: 500;
+    transition: 0.5s all ease-in-out;
 }
 
 .kmButn:hover{
@@ -53,4 +54,39 @@ label{
     padding: 0.1rem;
     border: 2px solid rgb(200, 197, 197);
     font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 6px 7px 6px -3.5px rgba(176,166,166,0.83);
+-webkit-box-shadow: 6px 7px 6px -3.5px rgba(176,166,166,0.83);
+-moz-box-shadow: 6px 7px 6px -3.5px rgba(176,166,166,0.83);
+}
+
+.resultContainer{
+    width: 20rem;
+    margin: 1rem auto;
+    height: 5rem;
+    padding: 1.2rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.6rem;
+    border-left: 1px solid rgba(94, 93, 93, 0.3);
+    border-top: 1px solid rgba(94, 93, 93, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.resultTitle{
+    font-size: 2rem;
+    margin: 0;
+   
+}
+
+#show{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
 }
