@@ -58,6 +58,7 @@ export default function Presupuesto() {
       <input
         className={s.inputPres}
         type='number'
+        min={0}
         name='presupuestoMin'
         value={input.presupuestoMin}
         placeholder='Cuál es tu presupuesto mínimo?'

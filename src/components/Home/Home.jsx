@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import Typed from 'typed.js';
 import s from './Home.module.css';
-//import video from './mountains.mp4';
-import video from './Earth.mp4';
+import video from './mountains.mp4';
+//import video from './Earth.mp4';
 
 export default function Home() {
  
@@ -15,7 +15,6 @@ export default function Home() {
   React.useEffect(() => {
     const options = {
     	strings: [
-        
         'a tu próximo destino',
         '¿Te animas a saltar sin red?'
       ],
@@ -40,7 +39,7 @@ export default function Home() {
         <span style={{ whiteSpace: 'pre' }} ref={el} />
       </div>
       <div className={s.btns}>
-        <Link className={s.link} to='trip'>Animate</Link>
+        <Link className={s.link} to='trip'>Animate!</Link>
       </div>
       <video className={s.videoWorld} autoPlay loop muted>
         <source src={video} type="video/mp4"/>
