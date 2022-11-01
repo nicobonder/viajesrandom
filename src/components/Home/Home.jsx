@@ -2,7 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import Typed from 'typed.js';
 import s from './Home.module.css';
-import video from './../ExperienciaRadical/VideoWorld.mp4';
+//import video from './mountains.mp4';
+import video from './Earth.mp4';
 
 export default function Home() {
  
@@ -19,7 +20,7 @@ export default function Home() {
         '¿Te animas a saltar sin red?'
       ],
       typeSpeed: 50,
-      backSpeed: 50,
+      backSpeed: 100,
     };
     
     // elRef refers to the <span> rendered below

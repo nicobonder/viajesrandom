@@ -1,7 +1,7 @@
 .wrap{
-    background-color: black;
+    background-color: rgb(250, 250, 250);
     height: 100vh;
-    color: white;
+    color: black;
     margin: 0;
     padding: 0.5rem;
 }
@@ -13,7 +13,7 @@
 .btns{
   height: 2rem;
   width: 5rem;
-  border: white 1px solid;
+  border: black 1px solid;
   border-radius: 0.2rem;
   margin: 1rem auto;
   outline: none;
@@ -31,7 +31,7 @@
 
 .link{
   background-color: transparent;
-  color: white;
+  color: black;
   font-size: 0.8rem;
   font-weight: 500;
   transition: 0.5s all ease-in-out;
@@ -46,7 +46,6 @@
 }
 
 .videoWorld{
-  height: 450px;
-  width: 450px;
-  margin-top: -1rem;
+  width: 50%;
+  margin-top: 0rem;
 }

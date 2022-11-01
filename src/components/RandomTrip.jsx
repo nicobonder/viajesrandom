@@ -1,6 +1,6 @@
 import React from 'react'
-import Comida from './Comida'
-import Kilometros from './Kilometros'
+import Kilometros from './kilometres/Kilometros'
+import Comida from './food/Comida'
 import LeerFuncional from './leer/LeerFuncional'
 import Presupuesto from './presupuesto/Presupuesto'
 import Radical from './ExperienciaRadical/Radical'
@@ -9,7 +9,7 @@ export default function RandomTrip() {
   return (
     <div>
         <Kilometros />
-        <Comida  />
+        <Comida />
         <LeerFuncional />
         <Presupuesto />
         <Radical />

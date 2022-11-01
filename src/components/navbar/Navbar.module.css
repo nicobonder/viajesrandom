@@ -1,9 +1,15 @@
 .navbarSection{
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.92);
+    background-color: #000000eb;
     display: flex;
-    justify-content: right;
+    justify-content:space-around;
+    align-items: center;
     padding: 0.5rem 0;
+}
+
+.logo{
+    height: 3.5rem;
+    width: 3.5rem;
 }
 
 .links{
