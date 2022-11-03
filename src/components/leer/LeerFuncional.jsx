@@ -20,7 +20,9 @@ export default function LeerFuncional() {
 
         <img className={s.coinImg}  src={face === 0 ? moneda1 : moneda2} alt="cara o cruz" />
         <button className={s.flipBtn} onClick={handleFace}>Lanzame!</button>
-        <p className={s.sms}>{face === 0 ? "Lee sobre tu destino" : "Dejate sorprender"}</p>
+        <div className={s.resultContainer}>
+          <p className={s.sms}>{face === 0 ? "Lee sobre tu destino" : "Dejate sorprender"}</p>
+        </div>
         
     </div>
   )

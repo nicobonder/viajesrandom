@@ -71,7 +71,9 @@ export default function Presupuesto() {
          <CardPresupuesto key='three' id='three' min='0' max='20' showNumber={cards.three} handleCard={handleCard} />
          <CardPresupuesto key='four' id='four' min='0' max='20' showNumber={cards.four} handleCard={handleCard} />
         </ul>
-      <h3 className={s.resultado}> Tu presupuesto total es ${total}</h3>
+      <div className={s.resultContainer}>
+        <h3 className={s.resultado}> Tu presupuesto total es ${total}</h3>
+      </div>
 
     </div>
   )
